@@ -1,15 +1,54 @@
+:root {
+  color: aquamarine;
+  background-color: black;
+  font-size: 62.5%;
+}
+
 #navbar {
-  max-width: 30vw;
+  max-width: 20vw;
 }
-.el1 {
+.h1 {
+  font-size: 33rem;
 }
-.el2 {
+.el1:hover {
+  background-color: orange;
 }
-.el3 {
+.el2:hover {
+  background-color: rgba(0, 0, 255, 0.692);
 }
-.el4 {
+.el3:hover {
+  background-color: green;
 }
-.el5 {
+.el4:hover {
+  background-color: blueviolet;
 }
-.el6 {
+.el5:hover {
+  background-color: darkcyan;
+}
+.el6:hover {
+  background-color: mediumvioletred;
+}
+h1 {
+  font-size: 40rem;
+}
+p {
+  font-size: 1.6rem;
+}
+#navbar {
+  position: sticky;
+  max-height: 20vh;
+  display: block;
+}
+#main-doc {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.main-section {
+  overflow-y: scroll;
+}
+#recording > header {
+  background-color: orange;
+}
+#nbl2 > header {
+  background-color: rgba(0, 0, 255, 0.692);
 }
