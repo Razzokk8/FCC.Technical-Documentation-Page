@@ -18,144 +18,511 @@
     <main id="main-doc" class="">
       <nav class="navbar navbar-light bg-light fixed-top" id="navbar">
         <div class="container-fluid">
-          <header class="h1">Navbar</header>
+          <header class="h1" style="font-size: 3.25rem; margin-left: 10px">
+            <img
+              class="beads-logo"
+              src="https://mutable-instruments.net/modules/beads/images/logo.png"
+              alt="logo-beads"
+            />
+            Beads
+          </header>
         </div>
         <div class="container-fluid el1">
-          <a class="navbar-brand nav-link" href="#">RECORDING</a>
+          <a class="navbar-brand nav-link" href="#recording"
+            ><h2>Recording</h2></a
+          >
         </div>
         <div class="container-fluid el2">
-          <a class="navbar-brand nav-link" href="#">Navbar Link 2</a>
+          <a class="navbar-brand nav-link" href="#grain"
+            ><h2>Grain generation</h2></a
+          >
         </div>
         <div class="container-fluid el3">
-          <a class="navbar-brand nav-link" href="#">Navbar</a>
+          <a class="navbar-brand nav-link" href="#playback"
+            ><h2>Grain playback control</h2></a
+          >
         </div>
         <div class="container-fluid el4">
-          <a class="navbar-brand nav-link" href="#">Navbar</a>
+          <a class="navbar-brand nav-link" href="#att"
+            ><h2>Attenurandomizers</h2></a
+          >
         </div>
         <div class="container-fluid el5">
-          <a class="navbar-brand nav-link" href="#">Navbar</a>
+          <a class="navbar-brand nav-link" href="#mix"
+            ><h2>Mixing and audio output</h2></a
+          >
         </div>
         <div class="container-fluid el6">
-          <a class="navbar-brand nav-link" href="#">Navbar</a>
+          <a class="navbar-brand nav-link" href="#delay"
+            ><h2>Beads as a delay</h2></a
+          >
+        </div>
+        <div class="container-fluid el8">
+          <a class="navbar-brand nav-link" href="#granular"
+            ><h2>Beads as a granular synth</h2></a
+          >
+        </div>
+        <div class="container-fluid el9">
+          <a class="navbar-brand nav-link" href="#firmware"
+            ><h2>Firmware update</h2></a
+          >
+        </div>
+        <br>
+        <div class="container-fluid">
+          <img
+            class="el7"
+            src="https://mutable-instruments.net/modules/beads/images/manual.png"
+            alt=""
+          />
         </div>
       </nav>
       <div>
         <section class="main-section" id="recording">
           <header><h1>RECORDING</h1></header>
+          <br />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-            possimus assumenda aut praesentium ducimus iure molestias ab nobis
-            accusamus repellat saepe quis vitae, itaque quo asperiores, libero,
-            corporis fugit pariatur! Deserunt provident eaque est facilis illo
-            minus necessitatibus rerum ipsam distinctio aspernatur, error at
-            accusantium exercitationem sit qui consequuntur nisi. Nemo optio
-            similique eos provident voluptatum deserunt, modi deleniti illo.
-            Enim aut consequatur quibusdam, odio perferendis facilis fugiat
-            voluptatum suscipit neque quia qui doloremque officiis expedita
-            consequuntur nisi assumenda quam officia libero incidunt dignissimos
-            unde sed sapiente. Excepturi, quod voluptatem.
+            Recording quality is chosen with the selector button
+            <code>[A]</code> .
+          </p>
+          <div id="rec-p">
+            <div>
+              <img
+                src="https://mutable-instruments.net/modules/beads/images/quality_table.png"
+                alt="table-rec"
+              />
+            </div>
+            <div>
+              <ul>
+                <li>
+                  The Cold digital setting most accurately reproduces the sonic
+                  character of the late Mutable Instruments Clouds.
+                </li>
+
+                <li>
+                  The Sunny tape setting runs the dry audio signal at a bright
+                  and clean 48kHz.
+                </li>
+
+                <li>The Scorched cassette setting emulates wow and flutter.</li>
+              </ul>
+            </div>
+          </div>
+          <p>
+            Beads operates in mono or stereo depending on whether one, or both,
+            of the audio inputs <code>(1)</code> are patched.
+          </p>
+          <p>
+            When patch cables are inserted or removed, Beads monitors for five
+            seconds the level of the incoming signal and adjusts the input gain
+            accordingly, from +0dB to +32dB. The input level LED
+            <code>(2)</code> blinks during this adjustment process. The input
+            gain is chosen to leave some headroom, but in case of big level
+            changes, a limiter kicks in.
+          </p>
+          <p>
+            One can manually restart the gain adjustment process by pressing and
+            holding the audio quality selector button <code>[A]</code>for one
+            second. Holding this button <code>[A]</code> while turning the
+            feedback knob <code>[J]</code> allows manual gain adjustments. The
+            manually-set gain is memorized and applied until a long press on
+            <code>[A]</code> re-enables automatic gain control.
+          </p>
+          <p>
+            The <code>FREEZE</code> latching button <code>[B]</code> and the
+            corresponding gate input <code>(3)</code> disable the recording of
+            the incoming audio signal in the buffer. Otherwise, Beads records
+            continuously!
+          </p>
+          <p>
+            If <code>FREEZE</code> remains engaged for more than 10 seconds, the
+            content of the buffer is backed up, and will be restored the next
+            time the module is powered on.
+          </p>
+          <p>
+            Beads will not switch between stereo and mono operation, or change
+            the recording quality, while <code>FREEZE</code> is engaged.
+          </p>
+          <br />
+        </section>
+        <section class="main-section" id="grain">
+          <header><h1>GRAIN GENERATION</h1></header>
+          <br />
+          <h3><b> One header</b></h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+            quis, rem laboriosam voluptatibus eius voluptas, inventore quaerat
+            iure sit commodi expedita eaque ex fuga sint consequatur dolor?
+            Doloremque, perferendis repudiandae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            dolorum dolores asperiores debitis vel doloribus sit consequuntur
+            perspiciatis voluptates rem quo quam corporis illo, accusamus eaque
+            doloremque perferendis, sunt cum. Amet sed voluptate nobis officia
+            voluptatibus consequatur unde, fugiat dolorem veniam minus animi.
+            Recusandae, ex maxime? Eum in corrupti ipsa magni eveniet voluptatem
+            eaque repellat quae nesciunt recusandae. Eaque, in.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quasi doloribus nemo in. Cum blanditiis illo molestias, consequuntur
+            harum doloribus velit sunt impedit natus saepe culpa amet ullam
+            ducimus quibusdam! Quod sunt blanditiis cum, id aperiam eius nisi
+            molestias dolor labore. Sunt iste dolorum enim accusantium?
+            Architecto repellendus culpa officia reiciendis, libero possimus
+            quis voluptas doloribus ducimus totam ipsum quae. Sed error
+            voluptatem impedit veniam soluta consectetur dicta ab quisquam eaque
+            recusandae ut aperiam quo, tenetur ratione fuga fugit harum commodi
+            pariatur provident culpa quasi, autem ipsam eum? Nemo, aspernatur?
+            Tenetur, repellendus inventore. Dolores, at. Unde, commodi.
+            Reprehenderit alias recusandae iure consequatur, voluptatum quis
+            perspiciatis soluta repudiandae velit fugit dolor maiores quam.
+            Optio iusto amet, molestiae ut ullam molestias ex.
+          </p>
+          <br />
+          <h3><b> Second header</b></h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+            quis, rem laboriosam voluptatibus eius voluptas, inventore quaerat
+            iure sit commodi expedita eaque ex fuga sint consequatur dolor?
+            Doloremque, perferendis repudiandae. Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Quo, ex repellendus? Quos nesciunt,
+            voluptatum praesentium optio excepturi quia sapiente facilis eius
+            vel ullam illo suscipit dolore sequi autem vitae doloremque.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            dolorum dolores asperiores debitis vel doloribus sit consequuntur
+            perspiciatis voluptates rem quo quam corporis illo, accusamus eaque
+            doloremque perferendis, sunt cum. Amet sed voluptate nobis officia
+            voluptatibus consequatur unde, fugiat dolorem veniam minus animi.
+            Recusandae, ex maxime? Eum in corrupti ipsa magni eveniet voluptatem
+            eaque repellat quae nesciunt recusandae. Eaque, in.
+          </p>
+          <br />
+          <h3><b> And a third one!</b></h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+            quis, rem laboriosam voluptatibus eius voluptas, inventore quaerat
+            iure sit commodi expedita eaque ex fuga sint consequatur dolor?
+            Doloremque, perferendis repudiandae. Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Quo, ex repellendus? Quos nesciunt,
+            voluptatum praesentium optio excepturi quia sapiente facilis eius
+            vel ullam illo suscipit dolore sequi autem vitae doloremque.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            dolorum dolores asperiores debitis vel doloribus sit consequuntur
+            perspiciatis voluptates rem quo quam corporis illo, accusamus eaque
+            doloremque perferendis, sunt cum. Amet sed voluptate nobis officia
+            voluptatibus consequatur unde, fugiat dolorem veniam minus animi.
+          </p>
+          <br />
+        </section>
+        <section class="main-section" id="playback">
+          <header><h1>GRAIN PLAYBACK CONTROL</h1></header>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            officiis quae et commodi pariatur totam similique nam
+            necessitatibus! Quos eum corrupti doloribus eius veritatis, possimus
+            facilis earum facere minus dolores.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            aliquid recusandae illo iste? Sunt molestias, impedit officiis est
+            voluptatem amet tempore facere delectus aspernatur cumque, mollitia
+            fugiat, aut animi voluptatibus. Veritatis consequatur eius quaerat
+            optio enim beatae magnam, facilis ipsam? Consequatur, unde debitis.
+            Voluptatem illo beatae, cumque et doloremque quia quibusdam aliquam!
+            Optio laboriosam at possimus, veniam cum commodi sit?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            similique, ad molestiae laboriosam, ducimus ipsum optio possimus
+            voluptatibus unde cupiditate dicta odio laudantium delectus atque ea
+            et asperiores soluta nisi?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ea
+            facilis voluptatem nemo dolor optio ut! Laudantium pariatur culpa
+            quia voluptatum quisquam, expedita animi harum commodi amet. Rerum,
+            quae consectetur. Expedita cupiditate pariatur temporibus dolores?
+            Deleniti, rerum ducimus? Pariatur consequuntur veritatis dicta iusto
+            quod id at. Vitae, earum consectetur dolore eum unde cumque dicta
+            et! Placeat, aut iste. Rem, minus.
+          </p>
+          <br />
+        </section>
+        <section class="main-section" id="att">
+          <header>
+            <h1 style="text-transform: uppercase">Attenurandomizers</h1>
+          </header>
+          <br />
+          <p>
+            When a cable is patched into the corresponding CV input
+            <code> (6)</code> , turning the attenurandomizer <code>[I]</code> CW
+            from 12 o’clock increases the amount of external CV modulation.
+            Turning it CCW increases the amount of CV-controlled randomization.
+          </p>
+          <div class="float">
+            <img
+              src="https://mutable-instruments.net/modules/beads/images/ar_cv.png"
+              alt=""
+            /><img
+              src="https://mutable-instruments.net/modules/beads/images/ar_internal.png"
+              alt=""
+            />
+          </div>
+          <br />
+
+          <h3><b>Patch:</b></h3>
+          <br />
+          <ul>
+            <li>
+              Patch a ramp-down LFO, or a decaying linear envelope into the
+              <code>TIME</code>
+              CV input for “scrubbing” the buffer, or a segment of it, at
+              whichever speed the LFO rate or envelope time is set to.
+              Timestretching time!
+            </li>
+            <li>
+              The <code>PITCH CV</code> input tracks V/O when the
+              attenurandomizer is turned fully CW: one can sequence a melody of
+              grains or even play them from a keyboard.
+            </li>
+            <li>
+              Patch a fast arpeggiated sequence into the
+              <code>PITCH CV</code> input to create chords: each grain will be
+              played at a randomly chosen note of the arpeggio.
+            </li>
+            <li>
+              Sequence slices of sound (or phonemes from a recording of speech)
+              by patching the CV output of a sequencer into TIME, and its gate
+              output into <code>SEED</code> .
+            </li>
+          </ul>
+          <br />
+        </section>
+        <section class="main-section" id="mix">
+          <header>
+            <h1 style="text-transform: uppercase">Mixing and audio output</h1>
+          </header>
+          <br />
+          <img
+            src="https://mutable-instruments.net/modules/beads/images/signal_flow.png"
+            alt=""
+          />
+          <br />
+          <p>
+            <code> J. Feedback</code> , that is to say the amount of output
+            signal mixed with the input signal and fed back into the processing
+            chain. Each quality setting employs a different feedback amplitude
+            limiting scheme typical of the medium it emulates – from clean
+            brickwall-limiting to grungy tape saturation.
+          </p>
+          <p><code>K. Dry/wet</code> balance.</p>
+          <p>
+            <code>L.</code> Amount of <code>reverb</code> . Modeled on the
+            acoustics of Thoreau’s cabin, or of a strip-mall spa.
+          </p>
+          <p>
+            The LED under each of these knobs indicates the amount of modulation
+            they receive from the assignable CV input <code> (7)</code> .
+          </p>
+          <p>
+            Press the button <code>[M]</code> to select to which of these 3
+            destinations the CV input <code>(7)</code> is assigned. Or hold this
+            button and turn the knobs <code>[J]</code> , <code>[K]</code> and
+            <code>[L]</code> to individually adjust the amount of CV modulation.
+          </p>
+          <p>
+            <code>8. Audio output</code> . While the recording buffer can be
+            mono or stereo, Beads’ signal processing chain is always stereo. If
+            the R output is left unpatched, both L and R signals are summed
+            together and sent to the L output.
+          </p>
+          <p>
+            If one of the grains’ parameters is randomized, or if the grains are
+            generated at a random rate, their pan position will also be
+            randomized.
+          </p>
+          <p>
+            Hold the button <code>[M]</code> and press the
+            <code>SEED</code> button <code>[C]</code> to enable (or disable) the
+            generation of a grain trigger signal on the R output. A patch cable
+            will have to be inserted in the R output for this to work without
+            affecting the L output!
+          </p>
+          <br />
+        </section>
+        <section class="main-section" id="delay">
+          <header>
+            <h1 style="text-transform: uppercase">Beads as a delay</h1>
+          </header>
+          <br />
+          <p>
+            Setting the grain <code>SIZE [G]</code> knob fully clockwise (∞)
+            turns Beads into a delay or beat slicer. Effectively, only one grain
+            remains active, forever, continuously reading from the tape.
+          </p>
+          <p>
+            The base delay time (and slice duration) can be manually controlled,
+            tapped, or set by an external clock.
+          </p>
+          <br />
+          <h3><b>Control</b></h3>
+          <br />
+          <p>
+            If the <code>SEED</code> input <code>(4)</code> is left unpatched,
+            and if the <code>SEED</code> button <code>[C]</code> is latched
+            (slowly fading in and out), the delay time is freely controlled by
+            the DENSITY knob <code>[D]</code> and CV input <code> (5)</code> .
+          </p>
+          <p>
+            At 12 o’clock, the base delay time corresponds to the full buffer
+            duration. Turn the knob further away to shorten the delay time up to
+            audio rates, for flanger or comb-filtering effects. From 12 o’clock
+            to fully CW, the delay will have an additional, unevenly spaced,
+            tap.
+          </p>
+          <img
+            src="https://mutable-instruments.net/modules/beads/images/delay_density.png"
+            alt=""
+          />
+          <br />
+          <h3><b>Tap-tempo control</b></h3>
+          <br />
+          <p>
+            If an external clock is patched into the <code>SEED</code> input
+            <code>(4)</code>, or if you rhythmically tap the
+            <code>SEED</code> button, the base delay time will be set as the
+            interval between the taps or clock ticks.
+          </p>
+          <p>
+            The <code>DENSITY</code> knob <code>[D]</code> selects a subdivision
+            of this duration. Turn the knob further away from 12 o’clock to use
+            shorter subdivisions. From 12 o’clock to fully CCW, only binary
+            subdivisions will be used. From 12 o’clock to fully CW, a wider
+            variety of ratios are available.
+          </p>
+          <br />
+          <img
+            src="https://mutable-instruments.net/modules/beads/images/delay_div.png"
+            alt=""
+          />
+          <br />
+          <h3><b>Delaying or slicing</b></h3>
+          <br />
+          <p>
+            When <code>FREEZE [B]</code> is not engaged, Beads operates as a
+            delay. The <code>TIME</code> knob <code>[E]</code> selects the
+            actual delay time, as a multiple of the base delay time set by
+            <code>DENSITY</code> and/or by the external clock or taps. When
+            <code>FREEZE [B]</code> is engaged, a slice from the recording
+            buffer is continuously looped. The duration of a slice is equal to
+            the base delay time. The <code>TIME</code> knob
+            <code>[E]</code> selects which slice is played.
+          </p>
+          <p>
+            The <code> SHAPE</code> knob <code> [H]</code> applies a
+            tempo-synchronized envelope on the repeats. For normal operation,
+            turn it fully CCW. <code>PITCH [F]</code> applies a classic
+            rotary-head pitch-shifting effect on the delayed signal. At 12
+            o’clock, the pitch-shifter is bypassed. Slow random LFOs are
+            internally routed to the attenurandomizers <code> [I]</code> .
           </p>
         </section>
-        <section class="main-section" id="nbl2">
-          <header><h1>NAVBAR LINK "2"</h1></header>
+        <section class="main-section" id="granular">
+          <header>
+            <h1 style="text-transform: uppercase">
+              Beads as a granular wavetable synth
+            </h1>
+          </header>
+          <br />
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-            placeat voluptates sed et repudiandae quasi velit minus, vel
-            assumenda sapiente neque sint fugit quisquam eaque, quos adipisci,
-            voluptas sequi delectus. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. In mollitia porro magnam dolor laboriosam,
-            necessitatibus pariatur illo. Nobis, sapiente officiis unde maiores
-            error amet tempora deserunt! Omnis ipsum sit amet! Est ratione sit
-            quia vitae dolore incidunt eos consequuntur eius ullam voluptatibus.
-            Similique quam, officia quibusdam expedita totam nemo, ipsa magnam
-            voluptatum ipsum nostrum, qui vero alias? Sit, natus illum. Minima
-            officiis iure obcaecati? Dolorum voluptates iste vero ullam est qui
-            reprehenderit culpa aut alias voluptatem rerum quasi ducimus optio,
-            autem corporis nulla ipsum eum ea. Pariatur explicabo libero earum.
-            Quia similique iure nobis illum odio, et, sunt sequi quam natus
-            autem accusamus tenetur a illo, ipsa inventore alias deserunt?
-            Numquam, vitae enim! Earum natus a soluta nam, quae numquam? Culpa
-            laboriosam blanditiis explicabo est sunt praesentium. Culpa nemo
-            inventore consequatur autem sunt velit quae laborum ratione
-            asperiores eum fugiat laudantium perferendis accusantium excepturi
-            laboriosam quia sequi eos, ad eius? Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Quasi earum expedita quas esse labore,
-            sapiente nobis quos suscipit ratione. Quidem possimus, ullam commodi
-            iure corrupti perferendis sit ipsam totam accusamus. Ex, vero
-            itaque. Quibusdam quisquam suscipit ipsa expedita unde quasi fugit
-            veniam illum rerum sapiente, inventore quia repudiandae beatae
-            dolorem consequatur. Voluptatem, asperiores quae! Iste obcaecati qui
-            voluptate voluptatem perferendis? Ullam deleniti odio molestiae
-            expedita aspernatur necessitatibus placeat impedit fuga, illum
-            praesentium exercitationem, veniam eius nisi fugiat, cumque maxime
-            eligendi aliquid deserunt similique! Iure vel neque quasi
-            aspernatur, nihil incidunt! Laborum, explicabo qui obcaecati debitis
-            sequi cum vero repellat quisquam officiis numquam, saepe eos
-            possimus dicta dolorem quo illo maxime quam dignissimos atque
-            nesciunt nemo at. Possimus qui esse sed? Accusantium commodi facilis
-            est reiciendis hic, laborum inventore repudiandae, enim facere
-            blanditiis maxime. Similique unde id eius, expedita repudiandae,
-            dolorum enim commodi quisquam excepturi delectus tempora iste!
-            Provident, sed totam. Atque minus natus eos neque ipsa, totam illum
-            ad quas veritatis est! Doloremque, id deserunt numquam ducimus quo
-            aliquid, ea, corrupti suscipit voluptatibus iusto debitis dolore
-            alias deleniti eveniet ab. Illum sunt, in nisi optio laborum
-            praesentium odit cupiditate tempore pariatur accusamus mollitia quae
-            veniam, voluptatum fuga! Cumque voluptas maiores deserunt magnam
-            consequuntur harum. Quis nisi dolores labore ea laudantium?
-            Voluptatem adipisci excepturi enim repellat, nobis quae ea. Deleniti
-            alias excepturi similique iste accusantium voluptates explicabo
-            harum numquam ad nostrum, facere, ratione reprehenderit ullam
-            obcaecati, temporibus sed delectus quam earum! Voluptatum pariatur
-            eos consectetur corrupti, aliquid ex obcaecati facilis quo dicta
-            nemo atque commodi placeat modi veniam reiciendis iusto ipsam
-            similique quas numquam nihil delectus repudiandae itaque. A, ut
-            dignissimos. Fugiat excepturi ut veniam, mollitia exercitationem ad
-            ratione, architecto nulla maxime praesentium inventore asperiores
-            fuga porro labore blanditiis omnis unde consectetur. Consequatur
-            voluptates doloribus minus minima vel sit error nulla. Nulla est,
-            accusantium quisquam rem dicta harum veritatis commodi libero a,
-            voluptatum consequatur eaque ratione praesentium nam facilis
-            doloribus, itaque iste vel sed earum possimus nesciunt neque culpa!
-            Quod, iure. Voluptates reprehenderit exercitationem ut odit a
-            labore. Optio, repudiandae quisquam odit omnis velit quibusdam at
-            hic, rerum assumenda cumque iste? Itaque suscipit vero excepturi
-            porro distinctio, esse similique eum necessitatibus? Delectus error
-            ea autem doloremque sequi vero incidunt nihil repellendus, itaque
-            exercitationem commodi quam eum labore qui accusantium voluptate
-            libero quibusdam optio totam eveniet perspiciatis molestiae eligendi
-            sapiente? Rerum, officia! Harum debitis incidunt expedita id ad?
-            Aliquam eos dignissimos itaque numquam temporibus, nam
-            exercitationem consectetur voluptas impedit tenetur libero ratione,
-            facere nisi repellat! Dolore ipsum corrupti, accusantium nemo non
-            odio! Recusandae corrupti delectus nihil quos natus cupiditate animi
-            id aspernatur, accusamus maxime ex officiis. Similique consequuntur
-            cum facere suscipit, culpa fugit ducimus sed adipisci modi esse,
-            nobis dolor enim unde? Animi labore aliquid porro voluptate
-            voluptates doloribus iste atque reprehenderit, numquam rem cum quam,
-            laborum odit alias, neque repudiandae accusantium aperiam tenetur
-            quidem optio sit dolorem? Perspiciatis quia modi aspernatur.
-            Voluptatem eum tempore alias quisquam fuga facere dolorem vero
-            exercitationem eos? Enim, aperiam tempore! Eaque incidunt animi
-            nobis porro nihil magni similique obcaecati. Consequatur, aperiam?
-            Excepturi ducimus unde molestiae nam? Dolorem dolore expedita ex
-            quaerat placeat. Ipsum quam doloribus provident temporibus
-            recusandae tenetur voluptate dolorem labore praesentium minus dolor,
-            id laboriosam animi dicta excepturi quisquam autem. Inventore
-            quisquam dolore earum. Delectus autem vero inventore dolorum
-            pariatur sapiente itaque corporis facere. Eos odit eius suscipit,
-            quos magni ducimus corrupti labore delectus laboriosam fugiat
-            quibusdam commodi nostrum rerum nobis veritatis quia aspernatur. Ea
-            deleniti natus culpa qui minima illo eveniet necessitatibus
-            asperiores, eos incidunt fugiat maxime, illum exercitationem rerum
-            debitis nobis voluptatibus in blanditiis consequatur? Amet iste rem
-            quibusdam, similique voluptatum ab.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+            facilis quam voluptates, est, pariatur consequuntur modi magnam
+            ducimus fugiat nihil cupiditate aspernatur velit dolorem optio enim
+            ipsa autem aliquam ullam.
           </p>
+          <p>
+            <ul><li>This is a list item</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+            facilis quam voluptates, est, pariatur consequuntur modi magnam
+            ducimus fugiat nihil cupiditate aspernatur velit dolorem optio enim
+            ipsa autem aliquam ullam.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quis officia eos repellendus tempore minima, ex voluptatum repellat, voluptate, non rerum! Quaerat atque doloribus temporibus tempora eveniet voluptates nihil quasi?</li>
+            <li>List item</li></ul>
+          </p>
+          <br />
+          <h3><b>Lorem</b></h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis labore maiores, quisquam ratione quasi nulla animi vel quidem consectetur facere iure voluptatem eius consequatur sequi architecto placeat. Temporibus, consequuntur deleniti.
+            Autem harum corrupti, pariatur eum soluta deserunt odit? Ut corporis consectetur, aut, harum quaerat quibusdam laudantium tempora dicta sint id illo exercitationem, quos laborum est odit dignissimos debitis suscipit animi.
+            Asperiores, vero voluptas aspernatur perspiciatis nostrum sunt modi odit iste, voluptatem quo sint eius. Qui omnis quae cumque enim deserunt hic laboriosam doloribus facilis fuga. Impedit mollitia amet eius provident.
+            Perspiciatis est mollitia ducimus nam, quas eveniet architecto amet blanditiis modi qui neque nisi at optio veniam corporis, ipsum, voluptatibus temporibus? Amet dolorum est aliquid quas iure voluptas, voluptate eum.
+            Asperiores perspiciatis corrupti quas odio, obcaecati mollitia sapiente id doloribus soluta deleniti eius rem voluptatum cum quod excepturi possimus alias sed, voluptatem ex. Minima aperiam cum et ad soluta esse?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit molestiae labore facere ea ad! Cumque obcaecati quia impedit eos? Minus, id earum? Cupiditate, natus voluptate nulla impedit ipsum aperiam earum.
+          </p>
+          
+          <br />
+          <h3><b>Ipsum</b></h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rerum ea eos, fugit eum alias est? Perferendis nulla eveniet beatae sapiente nam magni fugiat officia, soluta deleniti laboriosam eos nihil?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod quas minus fugiat soluta animi repellat, architecto nemo non vero recusandae, doloremque beatae accusantium enim id consequatur illum voluptatibus sapiente rem.
+          </p>
+          
+          <br />
+          <img
+            src="https://mutable-instruments.net/modules/beads/images/wavetable_quality_table.png"
+            alt=""
+          />
+          <br />
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nisi odit adipisci eveniet nostrum dolorem tempora, sint possimus ea exercitationem praesentium vitae eligendi. Nobis dolores iusto aspernatur pariatur sequi mollitia!</p>
         </section>
-        <section class="main-section" id=""><header></header></section>
-        <section class="main-section" id=""><header></header></section>
-        <section class="main-section" id=""><header></header></section>
-        <section class="main-section" id=""><header></header></section>
+        <section class="main-section" id="firmware">
+          <header>
+            <h1 style="text-transform: uppercase">
+              Firmware update procedure
+            </h1>
+          </header>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+            facilis quam voluptates, est, pariatur consequuntur modi magnam
+            ducimus fugiat nihil cupiditate aspernatur velit dolorem optio enim
+            ipsa autem aliquam ullam.
+          </p>
+          <p>
+            <ul><li>This is a list item</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+            facilis quam voluptates, est, pariatur consequuntur modi magnam
+            ducimus fugiat nihil cupiditate aspernatur velit dolorem optio enim
+            ipsa autem aliquam ullam.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quis officia eos repellendus tempore minima, ex voluptatum repellat, voluptate, non rerum! Quaerat atque doloribus temporibus tempora eveniet voluptates nihil quasi?</li>
+            <li>List item</li></ul>
+          </p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum non quisquam autem molestiae illo sed odio similique optio. Laborum vero id maxime exercitationem. Aliquam suscipit cum quo quidem est!
+          Odit dolor laudantium iusto harum explicabo assumenda, neque sapiente illum rem laboriosam. Fugit, et perferendis illum optio commodi iusto at nihil omnis ea numquam voluptas ratione hic modi, ducimus voluptates?
+          Eaque sequi, sapiente tenetur minima hic commodi quod inventore consequatur maiores earum sed ab accusantium molestias vel, enim unde? Animi, minima. Nisi laudantium ducimus voluptates aperiam rerum, ad delectus tenetur.</p>
+          <hr>
+          <ul><li>Unplug all CV inputs/outputs from the module. </li>
+          <li>Connect the output of your audio interface/sound card to the IN L input (1)</li>
+          <li>Set the TIME knob [E] to an intermediate position</li>
+          <li>Power on your modular system with the FREEZE illuminated push-button (B) pressed.</li>
+          <li>Make sure that no additional sound (such as email notification sounds, background music etc.) from your computer will be played during the procedure. Make sure that your speakers/monitors are not connected to your audio interface - the noises emitted during the procedure are aggressive and can harm your hearing. On non-studio audio equipment (for example the line output from a desktop computer), you might have to turn up the gain to the maximum.</li>
+          <li>When you are all set, play the firmware update file into the module. While the module receives data, the recording quality LED [A] will act as vu-meter (lit in yellow when the signal level is optimal). Try adjusting the TIME knob to adjust gain. When the end of the audio file is reached, the module automatically restarts - if it is not the case, please retry the procedure from the beginning.</li>
+          <li>In case the signal level is inadequate, all LEDs will blink in red. Press the button [B] and retry with a higher gain. If this does not help, please retry the procedure from another computer/audio interface, and make sure that no piece of equipment or software effect (equalizer, automatic gain control, FX processor) is inserted in the signal chain.
+</li></ul>
+        </section>
       </div>
     </main>
     <footer></footer>

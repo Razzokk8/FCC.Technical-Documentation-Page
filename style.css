@@ -17,7 +17,7 @@
   background-color: rgba(0, 0, 255, 0.692);
 }
 .el3:hover {
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.829);
 }
 .el4:hover {
   background-color: blueviolet;
@@ -26,12 +26,27 @@
   background-color: darkcyan;
 }
 .el6:hover {
-  background-color: mediumvioletred;
+  background-color: rgba(214, 23, 144, 0.986);
+}
+.el7 {
+  max-width: 18vw;
+}
+.el8:hover {
+  background-color: gold;
+}
+.el9:hover {
+  background-color: lightblue;
+}
+.beads-logo {
+  max-width: 30px;
+  position: relative;
+  margin-bottom: 5px;
 }
 h1 {
   font-size: 40rem;
 }
-p {
+p,
+li {
   font-size: 1.6rem;
 }
 #navbar {
@@ -49,6 +64,40 @@ p {
 #recording > header {
   background-color: orange;
 }
-#nbl2 > header {
+#grain > header {
   background-color: rgba(0, 0, 255, 0.692);
+}
+#playback > header {
+  background-color: rgba(0, 128, 0, 0.829);
+}
+#att > header {
+  background-color: blueviolet;
+}
+#mix > header {
+  background-color: darkcyan;
+}
+#delay > header {
+  background-color: rgba(214, 23, 144, 0.986);
+}
+#granular > header {
+  background-color: gold;
+}
+#firmware > header {
+  background-color: lightblue;
+}
+code {
+  padding: 2px;
+  border-radius: 3px;
+  box-shadow: 3px 4px silver;
+  font-weight: 600;
+  margin-right: 3px;
+}
+#rec-p,
+.float {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.6rem;
+}
+img:not(.el7) {
+  max-height: 252px;
 }
