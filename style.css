@@ -1,11 +1,14 @@
 :root {
+  margin: 0 0 0 0;
   color: aquamarine;
   background-color: black;
   font-size: 62.5%;
 }
 
 #navbar {
-  max-width: 20vw;
+  max-width: 400px;
+  max-height: 80vh;
+  display: block;
 }
 .h1 {
   font-size: 33rem;
@@ -29,7 +32,7 @@
   background-color: rgba(214, 23, 144, 0.986);
 }
 .el7 {
-  max-width: 18vw;
+  max-width: 350px;
 }
 .el8:hover {
   background-color: gold;
@@ -44,10 +47,13 @@
 }
 h1 {
   font-size: 40rem;
+  margin-top: 25px;
 }
 p,
-li {
+ul {
   font-size: 1.6rem;
+  padding-right: 50px;
+  padding-left: 10px;
 }
 #navbar {
   position: sticky;
@@ -64,25 +70,25 @@ li {
 #recording > header {
   background-color: orange;
 }
-#grain > header {
+#grain_generation > header {
   background-color: rgba(0, 0, 255, 0.692);
 }
-#playback > header {
+#grain_playback_control > header {
   background-color: rgba(0, 128, 0, 0.829);
 }
-#att > header {
+#attenurandomizers > header {
   background-color: blueviolet;
 }
-#mix > header {
+#mixing_and_audio_output > header {
   background-color: darkcyan;
 }
-#delay > header {
+#beads_as_a_delay > header {
   background-color: rgba(214, 23, 144, 0.986);
 }
-#granular > header {
+#beads_as_a_granular_synth > header {
   background-color: gold;
 }
-#firmware > header {
+#firmware_update_procedure > header {
   background-color: lightblue;
 }
 code {
@@ -98,6 +104,37 @@ code {
   grid-template-columns: 1fr 1fr;
   font-size: 1.6rem;
 }
-img:not(.el7) {
-  max-height: 252px;
+img:not(.el7, .beads-logo) {
+  max-height: 250px;
+  padding: 10px;
+}
+
+@media (max-width: 575.98px) {
+  #main-doc {
+    display: list-item;
+  }
+  p,
+  ul {
+    min-width: 330px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  b {
+    margin-left: 20px;
+  }
+  img {
+    max-width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .float {
+    flex-direction: column;
+  }
+  #rec-p {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    color: white;
+  }
 }
