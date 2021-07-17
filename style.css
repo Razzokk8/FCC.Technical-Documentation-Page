@@ -1,18 +1,20 @@
 :root {
   margin: 0 0 0 0;
-  color: aquamarine;
-  background-color: black;
   font-size: 62.5%;
+}
+::before,
+::after {
+  box-sizing: border-box;
 }
 
 #navbar {
   max-width: 400px;
   max-height: 80vh;
   display: block;
+  position: sticky;
+  max-height: 20vh;
 }
-#navbar2 {
-  background-color: azure;
-}
+
 .h1 {
   font-size: 33rem;
 }
@@ -20,10 +22,10 @@
   background-color: orange;
 }
 .el2:hover {
-  background-color: rgba(0, 0, 255, 0.692);
+  background-color: cornflowerblue;
 }
 .el3:hover {
-  background-color: rgba(0, 128, 0, 0.829);
+  background-color: green;
 }
 .el4:hover {
   background-color: blueviolet;
@@ -58,11 +60,7 @@ ul {
   padding-right: 50px;
   padding-left: 10px;
 }
-#navbar {
-  position: sticky;
-  max-height: 20vh;
-  display: block;
-}
+
 #main-doc {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -74,10 +72,10 @@ ul {
   background-color: orange;
 }
 #grain_generation > header {
-  background-color: rgba(0, 0, 255, 0.692);
+  background-color: cornflowerblue;
 }
 #grain_playback_control > header {
-  background-color: rgba(0, 128, 0, 0.829);
+  background-color: green;
 }
 #attenurandomizers > header {
   background-color: blueviolet;
@@ -107,17 +105,42 @@ code {
   grid-template-columns: 1fr 1fr;
   font-size: 1.6rem;
 }
-img:not(.el7, #logo-beads) {
+img:not(.el7, .beads) {
   max-height: 250px;
   padding: 10px;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30vh;
+  text-align: center;
+  font-size: 1.4rem;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-brand2 {
+  font-size: 1.6rem;
+  padding: 0px 20px 0px 0px;
+  color: white;
+}
+
+.nxnn {
+  display: flex;
+  justify-content: start;
+  min-height: 5vh;
+}
+
 @media (max-width: 1999.98px) {
+  section {
+    padding-top: 55px;
+  }
   #main-doc {
     display: flex;
   }
   p,
-  ul > li {
+  ul > li:not(.nvblbl2) {
     min-width: 100%;
     padding-right: 20px;
     padding-left: 20px;
