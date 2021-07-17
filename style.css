@@ -10,6 +10,9 @@
   max-height: 80vh;
   display: block;
 }
+#navbar2 {
+  background-color: azure;
+}
 .h1 {
   font-size: 33rem;
 }
@@ -40,7 +43,7 @@
 .el9:hover {
   background-color: lightblue;
 }
-.beads-logo {
+#logo-beads {
   max-width: 30px;
   position: relative;
   margin-bottom: 5px;
@@ -104,11 +107,41 @@ code {
   grid-template-columns: 1fr 1fr;
   font-size: 1.6rem;
 }
-img:not(.el7, .beads-logo) {
+img:not(.el7, #logo-beads) {
   max-height: 250px;
   padding: 10px;
 }
 
+@media (max-width: 1999.98px) {
+  #main-doc {
+    display: flex;
+  }
+  p,
+  ul > li {
+    min-width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  b {
+    margin-left: 20px;
+  }
+
+  img {
+    max-height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .float {
+    flex-direction: row;
+  }
+  #rec-p {
+    display: flex;
+    flex-direction: column;
+  }
+  ul {
+    background-color: rgba(192, 192, 192, 0.253);
+  }
+}
 @media (max-width: 575.98px) {
   #main-doc {
     display: list-item;
